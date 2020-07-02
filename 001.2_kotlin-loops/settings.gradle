@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "001.2_kotlin-loops"

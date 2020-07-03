@@ -7,11 +7,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)  // res/layout/activity_main.xml
 
-        ok_button.setOnClickListener {
-            val firstName = first_name.text.toString()
-            result.text = firstName
+        // res/layout/activity_main.xml ->
+        ok_button.setOnClickListener {                  // Button:      id = ok_button
+            val firstName = first_name.text.toString()  // EditText:    id = first_name
+            result.text = firstName                     // TextView:    id = result
         }
     }
 }
